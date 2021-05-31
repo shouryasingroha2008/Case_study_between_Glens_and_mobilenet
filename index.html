@@ -1,0 +1,146 @@
+  
+<html>
+    <head>
+        <title>CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+
+      <body>
+      <center>
+        <h4 style="text-align: center;font-family: 'Lexend Tera', sans-serif;">
+            <span>CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET </span>
+            <br><br>
+            GOOGLE LENS <img src="gl.jpeg" style="width: 50px; height: 50px;">
+            <p>
+                <b style="color: red;">VS</b>
+            </p>
+            <br>
+            <p class="btn btn-primary" style="font-size: 20px;">Mobilenet </p>
+            </h4>
+      
+      <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+       <ol>
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img src="shoes.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Sneakers<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - Running shoes<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Mobilenet is more accurate</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img src="perfume.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - PARK AVENUE Genuine French Original Eau de Parfum - 50 ml <span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - perfume<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Both are corect</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img id="p" src="pen.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Pen<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - Windsor tie<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Google len is correct</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img id="m" src="comp mouse.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Mouse<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - CD player<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Google lens is more accurate</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img src="keyboard.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Keyboard<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - Keyboard<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Both are correct</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img src="earphone.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Earphone<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - Racket<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Google lens is more accurate</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img id="b" src="bottle.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - Cup<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - water bottle<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - MobileNet is more accurate</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+
+        <div class="test_images_and_results col-lg-6 col-sm-6 col-xs-12">
+            <li>
+                <b>Test Image - </b> <br>
+                <img src="scissors.jpg" class="img-responsive">
+            </li>
+            <h5 id = "Wolfram">Output on Google Lens - scissors<span></span></h5>
+            <h5 id = "Mobilenet">Output on MobileNet - scissors<span></span></h5>
+            <div class = "mini_result">
+            <h4>Result - Both are correct</h4>
+            <hr>
+            <h4 class="mini_result_h4"></h4>
+        </div>
+        </div>
+       </ol>
+       <div id="final_result">I have tested 8 Images<br>Google Lens detected 6 of them correctly.<br>Mobile Net detected 5 of them correctly.<br>According to my case study Google lens is more accurate</div>
+    </center>
+      <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
